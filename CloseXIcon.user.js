@@ -6,7 +6,7 @@
 // @author       manju_summoner
 // @match        https://twitter.com/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @grant        none
+// @grant        window.close
 // ==/UserScript==
 (async function() {
     'use strict';
@@ -20,7 +20,7 @@
     }
     element.onmousedown = function()
     {
-        window.location.href="about:blank";
+        window.close();
         return false;
     };
 })();
